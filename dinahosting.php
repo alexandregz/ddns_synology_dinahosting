@@ -26,7 +26,7 @@ curl_setopt($req, CURLOPT_RETURNTRANSFER, true);
 $res = curl_exec($req);
 curl_close($req);
 
-# modificado por aemenor
+// modified by alexandregz
 $data = json_decode($res, true);
 if($data['responseCode'] == 1000) {
 	echo "good";
